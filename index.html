@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>EcoLife – Say No to Plastics</title>
+  <meta name="description" content="Track, learn, and reduce single-use plastics. Join challenges, earn badges, and go plastic‑free with EcoLife." />
+  <link rel="icon" href="./icons/icon-192.png" />
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+  <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2" defer></script>
+  <script type="module" src="./supabase.js"></script>
+  <script defer src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script type="module" src="./app.js"></script>
+<script type="module" src="./components/nav.js"></script>
+</head>
+<body>
+  <header class="app-header" role="banner">
+    <button id="menuBtn" class="icon-btn" aria-controls="sidebar" aria-expanded="false" aria-label="Open navigation">☰</button>
+    <div class="brand">
+      <img src="./icons/icon-192.png" alt="EcoLife logo" width="32" height="32" />
+      <h1>EcoLife</h1>
+    </div>
+    <div id="authState" class="auth-state" aria-live="polite"></div>
+  </header>
+
+  <nav id="sidebar" class="sidebar" aria-label="Main navigation"></nav>
+
+  <main id="app" class="app" role="main" tabindex="-1"></main>
+
+  <footer class="app-footer">
+    <a href="./privacy.html">Privacy</a>
+    <span>•</span>
+    <a href="#about" aria-label="About EcoLife">About</a>
+  </footer>
+</body>
+</html>
